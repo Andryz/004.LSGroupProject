@@ -1,11 +1,13 @@
 extends ../_template
 
 block vars
-  - var title = 'Main'
+	- var title = 'Main'
 
 block content
-  .headerContainer
-    header.header header
-    .search search
-  .content content
-  footer.footer footer
+	.headerContainer
+		header.header header
+		.search search
+		.content content
+		include ../main/new_in_world
+		include ../main/my_album
+	footer.footer footer
